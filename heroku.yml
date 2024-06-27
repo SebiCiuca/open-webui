@@ -2,4 +2,5 @@ build:
   docker:
     web: Dockerfile
 run:  
-  cc-openwebui: docker run -d -p 3000:8080 -e OPENAI_API_KEY=sk-proj-PiIAcf0EnMsvedfms5oeT3BlbkFJoA5gYLM0kFL7qf59pByh -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+  cc-openwebui: 
+    run: docker run -d -p 3000:8080 -e OPENAI_API_KEY=sk-proj-PiIAcf0EnMsvedfms5oeT3BlbkFJoA5gYLM0kFL7qf59pByh -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
